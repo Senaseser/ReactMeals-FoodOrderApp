@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CartIcon from "../Cart/CartIcon";
-import classes from "../Layout/HeaderCardButton.css";
+import "../Layout/HeaderCardButton.css";
 import { useSelector } from "react-redux";
 import Cart from "../Cart/Cart";
 
