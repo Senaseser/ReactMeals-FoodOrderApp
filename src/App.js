@@ -1,14 +1,22 @@
 import "./App.css";
-import { Fragment } from "react";
+import { useState } from "react";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
+import Cart from "./components/Cart/Cart";
+import CartContextProvider from "../src/store/CartProvider";
+
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 function App() {
+  
+
+  
   return (
-    <main className="h-screen">
+    <Provider store={store}>
       <Header />
       <Meals></Meals>
-    </main>
+    </Provider>
   );
 }
 

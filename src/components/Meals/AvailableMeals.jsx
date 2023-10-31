@@ -1,6 +1,7 @@
 import React from "react";
 import MealItem from "./MealItem.jsx/MealItem";
 import Card from "../UI/Card";
+import classes from "../Meals/AvailableMeals.module.css";
 
 const DUMMY_MEALS = [
   {
@@ -31,11 +32,11 @@ const DUMMY_MEALS = [
 
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => (
-    <MealItem key={meal.id} meal={meal} />
+    <MealItem id={meal.id} key={meal.id} meal={meal} />
   ));
 
   return (
-    <div className="flex justify-center items-center">
+    <div className={classes.meals}>
       <Card>
         <ul>{mealsList}</ul>
       </Card>
