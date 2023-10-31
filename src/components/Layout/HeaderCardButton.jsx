@@ -36,8 +36,8 @@ const HeaderCardButton = () => {
   return (
     <div>
       <button
-        className={`cursor-pointer font-inherit border-none bg-[#4d1601] text-white py-3 px-12 flex justify-around items-center rounded-full font-bold hover:bg-[#2c0d00] active:[#2c0d00]
-       ${btnIsHighlighted ? classes.bump : ""}`}
+        className={`cursor-pointer font-inherit border-none bg-[#4d1601] text-white py-3 px-4 flex justify-around items-center rounded-full font-bold hover:bg-[#2c0d00] active:[#2c0d00]
+        ${btnIsHighlighted ? "bump" : ""}`}
         onClick={showCartHandler}
       >
         <span className="w-5 h-5 mr-2 text-white z-50">
